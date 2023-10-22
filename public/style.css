@@ -1,13 +1,16 @@
 body {
-    background: #36393f;
+    background-image: url('https://cdn.discordapp.com/attachments/1156260640655163403/1165482139932971059/WallpaperDog-20545256.png?ex=654702d3&is=65348dd3&hm=6a45737498b4d82979851d3ab0b54a7144a077bcb65e92c2621328c0af995e15&');
+    background-size: cover;
+
 
     font-family: 'Fira Sans', sans-serif;
 }
 
 .jumbotron {
-    background: #2f3136;
-}
+    background: #333;
+    height: 100px; /* Adjust as needed */
 
+}
 h1 {
     color: white;
 }
@@ -177,3 +180,71 @@ textarea:focus {
 #username {
     color: white;
 }
+
+.uncopyable-text {
+    position: relative;
+  }
+
+  .uncopyable-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Transparent overlay */
+    pointer-events: none; /* Allows click-through to the text beneath */
+    z-index: 1; /* Ensure the overlay is above the text */
+  }
+    .error-box {
+      border: 2px solid #ff0000; /* Red border */
+      background-color: #ffdddd; /* Light red background */
+      padding: 20px; /* Increased padding inside the box */
+      color: #ff0000; /* Red text color */
+      font-weight: bold;
+      width: 600px; /* Increased width */
+      height: 85px; /* Increased height */
+      text-align: center; /* Center align text horizontally */
+    }
+    .header-container {
+        background-color: #333; /* Background color for the container */
+        color: #fff; /* Text color */
+        padding: 10px; /* Smaller padding for spacing */
+        text-align: center; /* Center-align text */
+      }
+  
+      /* Style the header text (h1) */
+      .header-title {
+        font-size: 18px; /* Smaller font size */
+        font-weight: bold; /* Font weight */
+      }
+  
+      /* Style the link (a) */
+      .back-link {
+        color: #ffffff; /* Link color */
+        text-decoration: none; /* Remove underlines */
+        font-weight: bold; /* Font weight */
+        margin-top: 5px; /* Add smaller margin for spacing */
+        display: block; /* Display the link as a block element for better spacing */
+      }
+      .success-box {
+        border: 2px solid #4CAF50; /* Green border */
+        background-color: #E6F4E6; /* Light green background */
+        padding: 20px; /* Padding inside the box */
+        color: #4CAF50; /* Green text color */
+        font-weight: bold;
+        width: 600px; /* Increased width */
+        height: 85px; /* Increased height */
+        text-align: center; 
+      }
+      .credits-link-container {
+        text-align: center; /* Center-align text */
+        background-color: #333; /* Background color */
+        padding: 5px; /* Padding for spacing */
+        color: #fff; /* Text color */
+      }
+  
+      .credits-link {
+        text-decoration: none; /* Remove underlines from the link */
+        color: #ffffff; /* Link text color */
+      }

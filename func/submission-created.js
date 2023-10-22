@@ -19,6 +19,7 @@ export async function handler(event, context) {
         const params = new URLSearchParams(event.body);
         payload = {
             banReason: params.get("banReason") || undefined,
+            serverText: params.get("serverText") || undefined,
             appealText: params.get("appealText") || undefined,
             futureActions: params.get("futureActions") || undefined,
             token: params.get("token") || undefined
@@ -26,6 +27,7 @@ export async function handler(event, context) {
     }
 
     if (payload.banReason !== undefined &&
+        payload.serverText !== undefined &&
         payload.appealText !== undefined &&
         payload.futureActions !== undefined && 
         payload.token !== undefined) {
@@ -52,6 +54,10 @@ export async function handler(event, context) {
                     {
                         name: "Why were you banned?",
                         value: payload.banReason.slice(0, MAX_EMBED_FIELD_CHARS)
+                    },
+                    {
+                        name: "What server was you banned in?",
+                        value: payload.serverText.slice(0, MAX_EMBED_FIELD_CHARS)
                     },
                     {
                         name: "Why do you feel you should be unbanned?",

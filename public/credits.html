@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Common styles for sections with rounded edges */
+    body {
+      background-color: #333;
+    }
+    .section {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin: 20px 0;
+      border-radius: 10px; /* Add rounded edges */
+    }
+
+    /* Style for credit and developer lists */
+    .credits-list, .developers-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Style for individual credit and developer items */
+    .credit-item, .developers-item {
+      margin: 10px 0;
+    }
+
+    /* Style for names and roles */
+    .name, .role {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .role {
+      font-style: italic;
+    }
+    
+    .credits-link-container {
+      position: fixed; /* Fixed position for bottom of the screen */
+      bottom: 0; /* Stick to the bottom */
+      width: 100%; /* Full width */
+      background-color: #333; /* Background color */
+      padding: 10px; /* Padding for spacing */
+      text-align: center; /* Center-align text */
+    }
+
+    .credits-link {
+      text-decoration: none; /* Remove underlines from the link */
+      color: #fff; /* Link text color */
+    }
+  </style>
+</head>
+<body>
+  <!-- Founders Section -->
+  <section class="section">
+    <h2>Founders</h2>
+    <ul class="credits-list">
+      <li class="credit-item">
+        <span class="name">Voke</span> - <span class="role">Founder</span>
+      </li>
+      <li class="credit-item">
+        <span class="name">Crypt</span> - <span class="role">Founder</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Developers Section -->
+  <section class="section">
+    <h2>Developers</h2>
+    <ul class="developers-list">
+      <li class="developers-item">
+        <span class="name">Voke</span> - <span class="role">Developer</span>
+      </li>
+
+    </ul>
+  </section>
+  <div class="credits-link-container">
+    <a href="index.html" class="credits-link">Back</a>
+  </div>
+
+  <section class="credits" id="credits">
+    <!-- Credits content goes here -->
+  </section>
+
+</body>
+</html>
